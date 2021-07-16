@@ -12,7 +12,8 @@
     --hoover-indicator: #2ebaff;
     --default-indicator: #7f7f7f;
     --background: #232427;
-    --background-nav-secondary: #4a4b4d;
+    --background-secondary: #4a4b4d;
+    --background-name: rgba(56, 53, 53, .4);
 
     /* GRIGLIA VISUALIZZAZIONE  <i class="fas fa-grip-horizontal"></i> */
     /* FULL SCREEN  <i class="fas fa-expand-arrows-alt"></i> */
@@ -35,7 +36,6 @@
     background-color: var(--background);
 
     width: 100%;
-    height: 100vh;
 }
 
 .option{
@@ -61,3 +61,57 @@
     border-radius: 10px
 }
 
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    height: 100%;
+
+    margin-top: 50px;
+}
+
+.block{
+    width: 90%;
+    /* height: 80%; */
+
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 200px;
+    height: 150px;
+    
+
+    margin: 5px;
+
+    position: relative;
+
+    border: 5px solid black
+}
+
+.card img{
+    width: 100%;
+    height: 100%
+}
+
+.name{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    padding: 2px 5px;
+
+    background-color: var(--background-name);
+
+    opacity: .7;
+}
+
+.card:hover{
+    border: 5px solid yellowgreen;
+    border-style: inset
+
+}
