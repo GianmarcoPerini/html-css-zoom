@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --button-color: #9c9c9c;
+    --background-color: #000000;
+    --txt-allert: #d9554c;
+    --hoover-indicator: #2ebaff;
+    --default-indicator: #7f7f7f;
+    --background-nav: #232427;
+    --background-nav-secondary: #4a4b4d;
+
+    
+    /* INDICATORE DESTRO  <i class="fas fa-caret-left"></i> */
+    /* INDICATORE SINISTRO  <i class="fas fa-caret-right"></i> */
+    /* ANGOLO UP  <i class="fas fa-angle-up"></i> */
+    /* MICROFONO  <i class="fas fa-microphone"></i> */
+    /* VIDEOCMERA  <i class="fas fa-video"></i> */
+    /* INVITO  <i class="fas fa-user-plus"></i> */
+    /* GESTIONE PARTECIPANTI  <i class="fas fa-user-friends"></i> */
+    /* GRAFICO  <i class="fas fa-chart-bar"></i> */
+    /* SHARE  <i class="fas fa-external-link-alt"></i> */
+    /* CHAT  <i class="fas fa-comment-dots"></i> */
+    /* RECORD  <i class="fas fa-record-vinyl"></i> */
+    /* ROOM  <i class="fas fa-th-large"></i> */
+    /* DOT  <i class="fas fa-ellipsis-h"></i> */
+}
+
