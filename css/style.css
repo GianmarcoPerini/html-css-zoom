@@ -5,6 +5,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body{
+    background-color: var(--background);
+}
+
 :root{
     --button-color: #9c9c9c;
     --background-color: #000000;
@@ -13,6 +17,7 @@
     --default-indicator: #7f7f7f;
     --background: #232427;
     --background-secondary: #4a4b4d;
+    --background-green: #4bc800;
     --background-name: rgba(56, 53, 53, .4);
 
     /* GRIGLIA VISUALIZZAZIONE  <i class="fas fa-grip-horizontal"></i> */
@@ -32,18 +37,12 @@
     /* DOT  <i class="fas fa-ellipsis-h"></i> */
 }
 
-.main{
-    background-color: var(--background);
-
-    width: 100%;
-}
 
 
 
 
 .button{
     width: 100%;
-    background-color: rebeccapurple;
     display: flex;
     justify-content: flex-end;
     color:  white;
@@ -52,25 +51,33 @@
 }
 
 .button__style{
-    background-color: var(--button-color);
+    background-image: linear-gradient(var(--background-secondary), var(--background) 60%);
     padding: 8px 10px;
     border-radius: 10px
 }
 
+.button__style:hover{
+    background-image: linear-gradient(var(--background-secondary), var(--background) 95%);
+    cursor: pointer;
+
+}
 
 
+/* //////////////////////////////////////// */
 
 
 .box{
     width: 90%;
+    height: 800px;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 50px auto 0 auto;
+    margin: 0 auto;
 }
 
 .box__card{
-    width: 200px;
+    width: 250px;
     height: 150px;
     margin: 5px;
     position: relative;
@@ -97,42 +104,32 @@
 }
 
 
+/* //////////////////////////////////////// */
 
 
 .foot{
     width: 100%;
-    height: 80px; 
-
-    background-color: red;
-
+    height: 70px; 
+    background-image: linear-gradient(var(--background-secondary), var(--background) 40%);
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-
     overflow: hidden;
+    margin-top: 60px;
 }
 
 .foot__box{
     width: 60px;
-    height: 80px;
-
-    background-color: blue;
-
+    height: 70px;
     margin: 0px 30px;
-
     display: flex;
     justify-content: space-around;
     align-items: center;
     align-content: space-around;
-
 }
 
 .foot :nth-of-type(11){
     margin-left: auto;
-    margin-right: 0;
-    width: 150px;
-    color: var(--txt-allert);
-    background-color: var(--background-secondary);
 }
 
 .foot :nth-of-type(3){
@@ -145,12 +142,12 @@
     justify-content: space-around;
     height: inherit;
 }
+
 .foot__icon{
     color: white;
     font-size: 1.5em;
     text-align: center;
     display: block;
-
 }
 
 .foot__prg{
@@ -165,4 +162,20 @@
     font-size: 1.3em;
     color: white;
     padding-top: 10px;
+}
+
+.foot__icon--green{
+    color: var(--background-green)
+}
+
+.foot__prg--red{
+    color: var(--txt-allert);
+}
+
+.foot__box--end{
+    background-color: var(--background-secondary);
+    margin-right: 0;
+    width: 150px;
+    height: 80px;
+    font-size: 1.3em
 }
