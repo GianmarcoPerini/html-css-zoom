@@ -37,7 +37,9 @@ body{
     /* DOT  <i class="fas fa-ellipsis-h"></i> */
 }
 
-
+.main{
+    height: 100vh;
+}
 
 
 
@@ -68,7 +70,7 @@ body{
 
 .box{
     width: 90%;
-    height: 800px;
+    height: 68.5%;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -96,9 +98,10 @@ body{
     padding: 2px 5px;
     background-color: var(--background-name);
     opacity: .7;
+    color: white;
 }
 
-.box__card:hover{
+.box__card__name--speaker{
     border: 5px solid yellowgreen;
     border-style: inset
 }
@@ -115,7 +118,9 @@ body{
     align-items: center;
     flex-wrap: wrap;
     overflow: hidden;
-    margin-top: 60px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
 .foot__box{
