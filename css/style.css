@@ -37,14 +37,12 @@ body{
     /* DOT  <i class="fas fa-ellipsis-h"></i> */
 }
 
-.main{
-    height: 100vh;
-}
 
-
+/* .container{
+    height: 50px;
+} */
 
 .button{
-    width: 100%;
     display: flex;
     justify-content: flex-end;
     color:  white;
@@ -55,7 +53,8 @@ body{
 .button__style{
     background-image: linear-gradient(var(--background-secondary), var(--background) 60%);
     padding: 8px 10px;
-    border-radius: 10px
+    border-radius: 10px;
+    flex-shrink: 0;
 }
 
 .button__style:hover{
@@ -69,9 +68,9 @@ body{
 
 
 .box{
-    width: 90%;
-    height: 68.2%;
-    overflow: hidden;
+    /* width: 90%; */
+    height: calc(100vh - 115.2px);
+    overflow: scroll;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -83,6 +82,7 @@ body{
     height: 149.8px;
     margin: 5px;
     position: relative;
+    flex-shrink: 0;
 }
 
 .box__card img{
@@ -116,12 +116,13 @@ body{
     height: 60px; 
     background-image: linear-gradient(var(--background-secondary), var(--background) 40%);
     display: flex;
+    overflow: hidden;
     /* align-items: flex-start; */
     flex-wrap: wrap;
     overflow: hidden;
-    position: fixed;
+    /* position: fixed;
     bottom: 0;
-    left: 0;
+    left: 0; */
 }
 
 .foot__box{
